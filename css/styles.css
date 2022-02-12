@@ -471,6 +471,54 @@ body {
   color: var(--accent-color);
 }
 
+/*Присоединяйтесь-футер*/
+
+.flex-container {
+  display: flex;
+  align-items: baseline;
+}
+
+.networks {
+  margin-left: 70px;
+}
+
+.footer-networks-list {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-networks-item + .footer-networks-item {
+  margin-left: 10px;
+}
+
+.footer-networks-link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.1);
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-networks-link:hover,
+.footer-networks-link:focus {
+  background-color: var(--accent-color);
+}
+
+.footer-networks-icon {
+  display: block;
+  fill: var(--white-color);
+}
+
+.networks-title {
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--white-color);
+}
 /*Стили для portfolio.html*/
 
 /*Фильтр-кнопки*/
