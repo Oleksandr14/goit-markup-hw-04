@@ -148,9 +148,20 @@ body {
   content: '';
 }
 
-.icone-phone {
+.link-svg {
+  display: flex;
+  align-items: center;
+}
+
+.icone-mail {
   display: block;
-  fill: #afb1b8;
+  margin-right: 10px;
+  fill: var(--primary-text-color);
+}
+
+.link-header:hover .icone-mail,
+.link-header:focus .icone-mail {
+  fill: var(--accent-color);
 }
 
 /*Герой*/
@@ -347,7 +358,6 @@ body {
 .masters-social-link {
   width: 44px;
   height: 44px;
-  background-color: tomato;
   border-radius: 50%;
   display: flex;
 
@@ -358,6 +368,54 @@ body {
 .masters-social-icon {
   display: block;
   fill: #afb1b8;
+}
+
+.masters-social-link:hover,
+.masters-social-link:focus {
+  background-color: var(--accent-color);
+}
+
+.masters-social-link:hover .masters-social-icon,
+.masters-social-link:focus .masters-social-icon {
+  fill: var(--white-color);
+}
+
+/*Постоянные клиенты*/
+
+.costumer-list {
+  display: flex;
+  justify-content: center;
+}
+
+.costumer-item + .costumer-item {
+  margin-left: 30px;
+}
+
+.costumer-link {
+  width: 170px;
+  height: 92px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+
+.costumer-icon {
+  display: block;
+  fill: #afb1b8;
+}
+
+.costumer-link:hover,
+.costumer-link:focus {
+  border-color: var(--accent-color);
+}
+
+.costumer-link:hover .costumer-icon,
+.costumer-link:focus .costumer-icon {
+  fill: var(--accent-color);
 }
 
 /*Футер*/
